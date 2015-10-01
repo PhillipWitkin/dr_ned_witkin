@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
 var fs = require("fs")
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (process.env.PORT || 80));
 // console.log("listening on port" + process.env.PORT || 3000)
 
 app.use(express.static(__dirname + '/public'));
 
 
 app.get("/", function(req,res){
-  var html = fs.readFileSync("./index.html", "utf8")
+  var html = fs.readFileSync("./views/index.html", "utf8")
   res.send(html)
 })
 
