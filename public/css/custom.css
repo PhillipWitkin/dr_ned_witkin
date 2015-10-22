@@ -10,6 +10,9 @@ img {
   height: auto;
 }
 
+.page-header {
+  text-shadow: 2px 2px 5px black;
+}
 
 .slide-image {
   padding-left: 15%; 
@@ -17,7 +20,6 @@ img {
   /*height: 500px;*/
   /*float: center;*/
 }
-
 
 
 #zocdoc {
