@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var fs = require("fs")
-app.set('port', (process.env.PORT || 80));
+app.set('port', (process.env.PORT || 3000));
 // console.log("listening on port" + process.env.PORT || 3000)
 
 app.use(express.static(__dirname + '/public'));
